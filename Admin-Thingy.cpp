@@ -46,7 +46,7 @@ class Action {
   std::function<std::any(args...)> func;
   int level;
   public:
-    constructor(std::function<std::any(args...)> func, int lvl) {
+    Action(std::function<std::any(args...)> func, int lvl) {
       this->level = lvl;
       this->func = func;
     }
